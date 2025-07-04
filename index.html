@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Lourenço Gama Consultoria – Asset Recovery</title>
+  <!-- Tailwind CDN (arbitrary value enabled) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lgblack: "#000000",
+            lgteal: "#7A9D96",
+            lglime: "#C1FF72",
+            lgoff: "#F5F5F5"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="font-['Inter'] bg-white text-lgblack">
+  <!-- NAVIGATION -->
+  <header id="top" class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-lgoff">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="#top" class="flex items-center gap-2">
+        <!-- Logo Placeholder -->
+        <span class="w-8 h-8 bg-lgteal text-lgblack rounded-full grid place-content-center font-semibold">LG</span>
+        <span class="font-display text-xl tracking-wide">Lourenço Gama</span>
+      </a>
+      <nav class="hidden md:flex gap-8 font-medium">
+        <a href="#servicos" class="hover:text-lgteal transition">Serviços</a>
+        <a href="#diferenciais" class="hover:text-lgteal transition">Diferenciais</a>
+        <a href="#equipe" class="hover:text-lgteal transition">Equipe</a>
+        <a href="#blog" class="hover:text-lgteal transition">Knowledge Hub</a>
+        <a href="#contato" class="hover:text-lgteal transition">Contato</a>
+      </nav>
+      <a href="#contato" class="md:hidden inline-block px-4 py-2 rounded-lg bg-lglime text-lgblack font-semibold">Diagnóstico</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-lgblack text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-lgteal/40 to-transparent"></div>
+    <div class="relative max-w-5xl mx-auto px-6 py-32 text-left">
+      <h1 class="font-display text-4xl md:text-5xl font-semibold leading-tight max-w-2xl">
+        Encontramos e recuperamos ativos <span class="text-lglime">onde outros desistem.</span>
+      </h1>
+      <p class="mt-6 max-w-xl text-lg">
+        Combinamos mais de 30 anos de investigação financeira, tecnologia proprietária e rede jurídica global para localizar, bloquear e repatriar patrimônio oculto.
+      </p>
+      <a href="#contato" class="mt-10 inline-block px-8 py-3 rounded-lg bg-lglime text-lgblack font-semibold shadow-md hover:shadow-lg transition">Solicitar diagnóstico</a>
+    </div>
+  </section>
+
+  <!-- AUTHORITY BAR -->
+  <section class="bg-lgoff py-12">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-6 text-center">
+      <div class="bg-white p-8 shadow-md rounded-lg">
+        <h3 class="text-2xl font-bold text-lgblack">R$ 8 bi+</h3>
+        <p class="text-lgteal mt-2">em ativos rastreados</p>
+      </div>
+      <div class="bg-white p-8 shadow-md rounded-lg">
+        <h3 class="text-2xl font-bold text-lgblack">30 anos</h3>
+        <p class="text-lgteal mt-2">de experiência forense</p>
+      </div>
+      <div class="bg-white p-8 shadow-md rounded-lg">
+        <h3 class="text-2xl font-bold text-lgblack">90 %</h3>
+        <p class="text-lgteal mt-2">taxa de sucesso</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS PREVIEW -->
+  <section id="servicos" class="py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl md:text-4xl mb-10">Serviços Especializados</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="p-6 rounded-lg border border-lgoff shadow-sm hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Investigação Patrimonial</h3>
+          <p class="text-lgteal">Mapeamento completo de ativos onshore e offshore.</p>
+        </div>
+        <div class="p-6 rounded-lg border border-lgoff shadow-sm hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">OSINT Avançada</h3>
+          <p class="text-lgteal">Inteligência de fontes abertas com IA proprietária.</p>
+        </div>
+        <div class="p-6 rounded-lg border border-lgoff shadow-sm hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Recovery Cross‑Border</h3>
+          <p class="text-lgteal">Coordenação jurídica em múltiplas jurisdições.</p>
+        </div>
+        <div class="p-6 rounded-lg border border-lgoff shadow-sm hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Jurimetria Aplicada</h3>
+          <p class="text-lgteal">Insights estatísticos para definir estratégia processual.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METODOLOGIA TIMELINE -->
+  <section id="diferenciais" class="bg-lgteal/10 py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="font-display text-3xl md:text-4xl mb-12 text-center">Nossa metodologia</h2>
+      <ol class="relative border-l-2 border-lgteal">
+        <li class="ml-6 mb-10">
+          <span class="absolute -left-3 w-6 h-6 bg-lglime rounded-full border-4 border-white"></span>
+          <h3 class="text-lg font-semibold">Mapeamento de Fontes</h3>
+          <p class="text-lgteal mt-1">Identificação de registros públicos e bases privadas.</p>
+        </li>
+        <li class="ml-6 mb-10">
+          <span class="absolute -left-3 w-6 h-6 bg-lglime rounded-full border-4 border-white"></span>
+          <h3 class="text-lg font-semibold">Rastreamento de Ativos</h3>
+          <p class="text-lgteal mt-1">Correlação de dados onchain e tradicionais.</p>
+        </li>
+        <li class="ml-6 mb-10">
+          <span class="absolute -left-3 w-6 h-6 bg-lglime rounded-full border-4 border-white"></span>
+          <h3 class="text-lg font-semibold">Litigância Estratégica</h3>
+          <p class="text-lgteal mt-1">Medidas judiciais de bloqueio e repatriação.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CASE HIGHLIGHT -->
+  <section class="bg-lgblack text-white py-16 border-y-4 border-lglime">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-lg lg:text-xl leading-relaxed">
+        <span class="text-lglime font-semibold">Caso em destaque:</span> Recuperamos US$ 12 milhões ocultos via trusts nas Ilhas Cayman em apenas 8 meses, coordenando investigações em quatro jurisdições.
+      </p>
+    </div>
+  </section>
+
+  <!-- LEAD MAGNET -->
+  <section class="bg-lgteal/50 py-20 text-center" id="blog">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="font-display text-3xl md:text-4xl mb-6">White‑Paper Exclusivo 2025</h2>
+      <p class="mb-8 text-lg lg:text-xl">Baixe gratuitamente nosso relatório <em>Asset Recovery Insights 2025</em> e descubra as tendências que moldarão a investigação patrimonial global.</p>
+      <a href="#" class="px-8 py-3 rounded-lg bg-lglime text-lgblack font-semibold shadow-md hover:shadow-lg transition">Baixar PDF</a>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="py-16">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="font-display text-2xl mb-8">Confiança das maiores instituições</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 grayscale hover:grayscale-0 transition-all">
+        <!-- Placeholder logos -->
+        <img src="https://via.placeholder.com/150x80?text=Banco+1" alt="Banco 1" class="mx-auto" />
+        <img src="https://via.placeholder.com/150x80?text=Fundo+2" alt="Fundo 2" class="mx-auto" />
+        <img src="https://via.placeholder.com/150x80?text=Empresa+3" alt="Empresa 3" class="mx-auto" />
+        <img src="https://via.placeholder.com/150x80?text=Family+Office+4" alt="Family Office 4" class="mx-auto" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="bg-lglime py-16 text-center">
+    <h2 class="font-display text-3xl md:text-4xl text-lgblack mb-6">Pronto para descobrir onde estão seus ativos?</h2>
+    <a href="#contato" class="px-10 py-4 rounded-lg bg-lgblack text-white font-semibold hover:bg-lgteal transition">Agendar call</a>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-20 bg-lgoff">
+    <div class="max-w-xl mx-auto px-6">
+      <h2 class="font-display text-3xl md:text-4xl mb-8 text-center">Fale Conosco</h2>
+      <form class="grid gap-6" onsubmit="event.preventDefault(); alert('Mensagem enviada!');">
+        <input type="text" placeholder="Nome" required class="p-4 rounded-lg border border-lgoff focus:outline-none focus:ring-2 focus:ring-lgteal" />
+        <input type="email" placeholder="E-mail" required class="p-4 rounded-lg border border-lgoff focus:outline-none focus:ring-2 focus:ring-lgteal" />
+        <input type="text" placeholder="Empresa" class="p-4 rounded-lg border border-lgoff focus:outline-none focus:ring-2 focus:ring-lgteal" />
+        <textarea rows="5" placeholder="Como podemos ajudar?" required class="p-4 rounded-lg border border-lgoff focus:outline-none focus:ring-2 focus:ring-lgteal"></textarea>
+        <button type="submit" class="px-8 py-3 rounded-lg bg-lgteal text-white font-semibold hover:bg-lgblack transition">Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-lgblack text-lgoff text-center py-10 text-sm">
+    © 2025 Lourenço Gama Consultoria – Todos os direitos reservados.<br />
+    Este site é confidencial e protegido pela legislação aplicável.
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/5581999999999" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-lglime rounded-full grid place-content-center shadow-lg hover:scale-105 transition" aria-label="WhatsApp">
+    <!-- Simple phone icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-lgblack" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12a9.75 9.75 0 1118.229 5.271L22.5 22.5l-5.229-2.021A9.75 9.75 0 012.25 12z" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 13.5l-1.125-.375a1.125 1.125 0 00-1.125.281l-.844.844a9.375 9.375 0 01-4.031-4.031l.844-.844a1.125 1.125 0 00.281-1.125L10.5 7.5a1.125 1.125 0 00-1.125-.75C7.965 6.75 6.75 7.5 6.75 9.75a11.25 11.25 0 0011.25 11.25c2.25 0 3-1.215 3-2.625a1.125 1.125 0 00-.75-1.125z" />
+    </svg>
+  </a>
+
+</body>
+</html>
